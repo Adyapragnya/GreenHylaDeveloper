@@ -1755,14 +1755,10 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
   
 
-
 // Start the server and listen on the specified port
-app.listen(port,'localhost', () => {
-    console.log(`Server running on http://localhost:${port}`);
+app.listen(port,'0.0.0.0', () => {
+    console.log(`Server running on http://0.0.0.0:${port}`);
 });
-
-
-
 
 
 
